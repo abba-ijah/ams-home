@@ -1,29 +1,72 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AMS</title>
+
   <meta name="theme-color" content="#063d2b">
   <meta name="apple-mobile-web-app-title" content="AMS">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48.png">
+
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=3">
+  <link rel="icon" type="image/png" href="./apple-touch-icon.png?v=3">
   <link rel="manifest" href="./manifest.json">
-  <title>AMS</title>
-  <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbz9O0ZXtYsEmzL5bO1wb_1OYlNQIhdCkGW9qAVDv4aveLSc6V-TW7pdvcDMlcA9PGVP8A/exec">
-  <script>
-    // Redirect to the existing AMS Apps Script application.
-    window.location.replace("https://script.google.com/macros/s/AKfycbz9O0ZXtYsEmzL5bO1wb_1OYlNQIhdCkGW9qAVDv4aveLSc6V-TW7pdvcDMlcA9PGVP8A/exec");
-  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #063d2b, #011b13);
+      color: white;
+      font-family: -apple-system, sans-serif;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .container { max-width: 380px; }
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 28px;
+    }
+
+    h1 { letter-spacing: 5px; }
+
+    p { color: #d0e5d9; line-height: 1.6; }
+
+    a {
+      display: block;
+      margin-top: 30px;
+      padding: 17px;
+      border-radius: 14px;
+      background: #e8bd51;
+      color: #102b1d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
+
 <body>
-  <main style="font-family:system-ui,sans-serif;min-height:90vh;display:grid;place-content:center;text-align:center;padding:24px;color:#123">
-    <img src="./apple-touch-icon.png" alt="AMS" width="112" height="112" style="border-radius:24px;margin:0 auto 20px">
+  <div class="container">
+    <img src="./apple-touch-icon.png?v=3" alt="AMS Logo">
     <h1>AMS</h1>
-    <p>Opening your AMS business application…</p>
-    <p><a href="https://script.google.com/macros/s/AKfycbz9O0ZXtYsEmzL5bO1wb_1OYlNQIhdCkGW9qAVDv4aveLSc6V-TW7pdvcDMlcA9PGVP8A/exec">Tap here if AMS does not open automatically</a></p>
-  </main>
+    <p>Your business management application.</p>
+
+    <a href="https://script.google.com/macros/s/AKfycbz9O0ZXtYsEmzL5bO1wb_1OYlNQIhdCkGW9qAVDv4aveLSc6V-TW7pdvcDMlcA9PGVP8A/exec">
+      Open AMS
+    </a>
+  </div>
 </body>
 </html>
